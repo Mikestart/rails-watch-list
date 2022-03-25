@@ -12,10 +12,10 @@
   <% end %>
 </ul>
 
-
+<%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
 
 
 <%= link_to 'Create a bookmark', new_list_bookmark_path(@list), class: "btn btn-primary" %>
 
 <br>
-<br><%= link_to "Back",  lists_path, class: "btn btn-primary" %>
+<br><%= link_to "Back",  root_path, class: "btn btn-primary" %>
